@@ -1,5 +1,7 @@
 package com.example.modernartui;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -110,8 +112,10 @@ public class MainActivity extends Activity {
 		int colorCode = color.getColor();
 		Color.colorToHSV(colorCode, colorCodeHSV);
 
-		colorCodeHSV[0] = 360f * progress / maxProgress;
+		Random randomFloat = new Random();
+		colorCodeHSV[0] = 360f * progress / maxProgress * randomFloat.nextFloat();
 		view.setBackgroundColor(Color.HSVToColor(colorCodeHSV));
+//		Color newColor = new Color().argb( (int) (Math.random() * 255), (int)( Math.random() * 255), 255, 0);
 	}
 
 	// set default colors to rectangle views
