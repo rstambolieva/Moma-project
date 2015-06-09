@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ModernArtUI</string>
+    <string name="action_settings">Settings</string>
+    <string name="more_info_menu">More Information</string>
+    <string name="alert_text">Inspired by works of artists such as .... Click below to learn more.</string>
+    <string name="no_button">No</string>
+    <string name="visit__moma_button">Visit MOMa page</string>
+
+</resources>
